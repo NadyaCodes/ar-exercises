@@ -21,12 +21,13 @@ puts "----------"
 @store2.employees.create(first_name: "Maggie", last_name: "Smith", hourly_rate: 45)
 @store2.employees.create(first_name: "Sandra", last_name: "Marche", hourly_rate: 45)
 
-puts @store1.employees.count
+puts "#{@store1.employees.count} employees added to store 1!"
+puts "#{@store2.employees.count} employees added to store 2!"
 
-@store1_employees = Employee.where(store_id: 1)
-@store1_employees.each {|employee| p "Name: #{employee.first_name}"}
+# @store1_employees = Employee.where(store_id: 1)
+# @store1_employees.each {|employee| p "Name: #{employee.first_name}"}
 
-puts @store1.employees
+# puts @store1.employees
 
 
 # table.references :store
